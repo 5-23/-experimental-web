@@ -1,0 +1,39 @@
+main {
+    height: 98vh;
+    overflow-y: scroll;
+    scroll-timeline-name: squareTimeline;
+}
+#square {
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    animation-name: rotateAnimation;
+    animation-duration: 5s;
+    animation-timeline: squareTimeline;
+  
+    bottom: 0;
+}
+  
+@keyframes rotateAnimation {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        background-color: red;
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        background-color: blue;
+        border-radius: 100%;
+    }
+}
+
+#stretcher {
+    height: 200vh;
+}
+  
+    
